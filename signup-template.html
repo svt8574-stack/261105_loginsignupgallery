@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <!-- 설명: 한글 표시를 위해 UTF-8을 사용합니다. -->
+  <meta charset="UTF-8">
+
+  <!-- 설명: 모바일에서도 화면이 알맞게 보이도록 합니다. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>회원가입</title>
+</head>
+
+<body>
+  <!-- 실습 흐름: 로그인보다 입력 항목이 많다는 점을 먼저 설명합니다. -->
+  <main class="page">
+    <section class="form-box">
+      <!-- 실습 1: 페이지 제목을 작성합니다. 예: 회원가입 -->
+      <h1 class="page-title">회원가입</h1>
+
+      <!-- 실습 2: 회원 정보를 입력하라는 안내 문구를 작성합니다. -->
+      <p class="page-desc">회원 정보를 입력하세요</p>
+
+      <form>
+        <!-- 여기 안에 있는 데이터를 묶어서 서버에 전달
+         form 태그는 묶어서 전달하는 역할 -->
+        <div class="form-group">
+          <!-- 실습 3: 이름 입력 영역을 완성합니다. -->
+          <label for="userName">이름</label>
+          <input class="input-field" id="userName" type="text" placeholder="이름을 입력하세요">
+        </div>
+
+        <div class="form-group">
+          <!-- 실습 4: 이메일 입력 영역을 완성합니다. type="email"을 확인합니다. -->
+          <label for="userEmail">이메일</label>
+          <input class="input-field" id="userEmail" type="email" placeholder="이메일을 입력하세요">
+        </div>
+
+        <div class="form-group">
+          <!-- 실습 5: 전화번호 입력 영역을 완성합니다. type="tel"을 확인합니다. -->
+          <label for="userPhone">전화번호</label>
+          <input class="input-field" id="userPhone" type="tel" placeholder="전화번호를 입력하세요">
+        </div>
+
+        <div class="form-group">
+          <!-- 실습 6: 성별 선택 영역을 완성합니다. select는 여러 선택지 중 하나를 고를 때 사용합니다. -->
+          <label for="userGender">성별</label>
+          <select id="userGender" class="input-field">
+            <!-- 첫 option은 아직 선택하지 않은 상태를 표현합니다. -->
+            <option value="">성별을 선택하세요</option>
+
+            <!-- 아래 option들은 사용자가 선택할 수 있는 항목입니다. -->
+            <option value="남성">남성</option>
+            <option value="여성">여성</option>
+            <option value="선택 안 함">선택 안 함</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <!-- 실습 7: 비밀번호 입력 영역을 완성합니다. -->
+          <label for="userPw">비밀번호</label>
+          <input class="input-field" id="userPw" type="password" placeholder="비밀번호를 입력하세요">
+        </div>
+
+        <div class="form-group">
+          <!-- 실습 8: 비밀번호 확인 입력 영역을 완성합니다. -->
+          <label for="userPwCheck">비밀번호 확인</label>
+          <input class="input-field" id="userPwCheck" type="password" placeholder="비밀번호를 한번 더 입력하세요">
+        </div>
+
+        <div class="check-group">
+          <!-- 실습 9: 체크박스는 동의 여부처럼 체크/미체크를 표현합니다. -->
+          <input id="agree" type="checkbox">
+          <label for="agree">이용약관에 동의합니다</label>
+        </div>
+
+        <!-- 실습 10: 회원가입 버튼 문구를 작성합니다. -->
+        <button type="button" class="btn" id="signupBtn">회원가입</button>
+        <!-- signupBtn-> 카멜케이스, 낙타 혹 같아서, 자바스크립트에서 사용
+            check-group -> 케밥케이스, CSS의 범위이기 때문에
+            +) snake_case
+            프로그래밍 언어는 언어별로 선호하는 표기법이 있다 -->
+      </form>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

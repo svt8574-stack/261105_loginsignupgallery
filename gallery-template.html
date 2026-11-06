@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <!-- 설명: 한글이 깨지지 않도록 설정합니다. -->
+  <meta charset="UTF-8">
+
+  <!-- 설명: 모바일 화면 대응을 위한 설정입니다. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>갤러리</title>
+</head>
+
+<body>
+  <!-- 실습 흐름: 갤러리는 같은 구조의 카드가 반복된다는 점을 먼저 설명합니다. -->
+  <header class="gallery-header">
+    <!-- 실습 1: 페이지 제목을 작성합니다. 예: 갤러리 -->
+    <h1 class="page-title">갤러리</h1>
+
+    <!-- 실습 2: 갤러리 소개 문구를 작성합니다. -->
+    <p class="page-desc">다양한 이미지를 카드 형태로 확인해보세요</p>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <!-- 실습 3: 섹션 제목을 작성합니다. 예: 추천 이미지 -->
+      <h2>추천 이미지</h2>
+
+      <!-- 여러 개의 카드를 넣을 공간 -->
+      <div class="gallery-list">
+        <!-- 설명: article은 카드 하나처럼 독립적인 콘텐츠를 표현할 때 사용합니다. -->
+        <article class="card">
+          <!-- 실습 4: alt에는 이미지가 무엇인지 설명하는 문구를 작성합니다. -->
+          <img src="https://i.pinimg.com/736x/a9/73/4c/a9734c15c5c0737d5a689cec582965fd.jpg" alt="사진1"
+          class="card-img">
+
+          <!-- 실습 5: 카드 제목을 작성합니다. -->
+          <h3 class="card-title">오 시 온</h3>
+
+          <!-- 실습 6: 카드 설명 문장을 작성합니다. -->
+          <p class="card-desc">NCT WISH</p>
+
+          <button class="card-btn" type="button">자세히 보기</button>
+        </article>
+
+        <!-- 카드2 -->
+        <article class="card">
+          <!-- 실습 4: alt에는 이미지가 무엇인지 설명하는 문구를 작성합니다. -->
+          <img src="https://i.pinimg.com/736x/09/68/a5/0968a5cb84a6ac139281ead02fb51b7d.jpg" alt="사진2"
+          class="card-img">
+
+          <!-- 실습 5: 카드 제목을 작성합니다. -->
+          <h3 class="card-title">박 민 주</h3>
+
+          <!-- 실습 6: 카드 설명 문장을 작성합니다. -->
+          <p class="card-desc">illit</p>
+
+          <button class="card-btn" type="button">자세히 보기</button>
+        </article>
+
+        <!-- 카드3 -->
+        <article class="card">
+          <!-- 실습 4: alt에는 이미지가 무엇인지 설명하는 문구를 작성합니다. -->
+          <img src="https://i.pinimg.com/1200x/10/f1/5d/10f15d7173c797e7c74c5f162b6fce0b.jpg" alt="사진3"
+          class="card-img">
+
+          <!-- 실습 5: 카드 제목을 작성합니다. -->
+          <h3 class="card-title">유 태 양</h3>
+
+          <!-- 실습 6: 카드 설명 문장을 작성합니다. -->
+          <p class="card-desc">SF9</p>
+
+          <button class="card-btn" type="button">자세히 보기</button>
+        </article>
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <!-- 실습 8: 페이지 하단 문구를 작성합니다. -->
+    <p><!-- 푸터 문구 --></p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

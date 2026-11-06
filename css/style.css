@@ -1,0 +1,193 @@
+/* =========================================================
+   1. 공통 기본 스타일
+   - 모든 페이지에 공통으로 적용되는 스타일입니다.
+========================================================= */
+
+/* body는 웹페이지 전체에 적용되는 기본 스타일입니다. */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+}
+
+/* 페이지 제목 스타일입니다. 로그인, 회원가입, 갤러리에서 함께 사용합니다. */
+.page-title {
+  font-size: 28px;
+  color: #222222;
+}
+
+/* 제목 아래 설명 문구 스타일입니다. 여러 페이지에서 함께 사용합니다. */
+.page-desc {
+  color: #666666;
+}
+
+/* 기본 버튼 스타일입니다. 로그인, 회원가입 버튼에서 사용합니다. */
+.btn {
+  width: 100%;
+  height: 44px;
+  background-color: #ff73ec;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* 버튼 위에 마우스를 올렸을 때 색상을 바꿔 사용자에게 반응을 보여줍니다. */
+.btn:hover {
+  background-color: #ffc2f7;
+}
+
+/* =========================================================
+   2. 공통 폼 스타일
+   - 로그인 페이지와 회원가입 페이지에서 함께 사용하는 스타일입니다.
+========================================================= */
+
+/* .page는 로그인/회원가입 박스를 화면 중앙에 배치하기 위한 영역입니다. */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .form-box는 로그인/회원가입 입력폼을 감싸는 흰색 박스입니다. */
+.form-box {
+  width: 360px;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+/* 입력 항목마다 아래쪽 여백을 줍니다. */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* label을 한 줄 전체로 보이게 만들어 입력칸 위에 배치합니다. */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* input과 select에 공통으로 적용되는 입력칸 스타일입니다. */
+.input-field {
+  width: 100%;
+  height: 42px;
+  padding: 0 10px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+/* 체크박스 영역 아래 여백입니다. */
+.check-group {
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   3. 로그인 페이지 스타일
+   - login.html에서만 사용하는 스타일입니다.
+========================================================= */
+
+/* 로그인 페이지의 회원가입 링크 영역입니다. */
+.link-text {
+  margin-top: 16px;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* 회원가입 링크 글자 스타일입니다. */
+.link-text a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 마우스를 링크 위에 올렸을 때 밑줄이 보이게 합니다. */
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   4. 회원가입 페이지 스타일
+   - signup.html에서만 사용하는 스타일입니다.
+   - 현재는 공통 폼 스타일을 대부분 사용합니다.
+   - 추후 회원가입 페이지 전용 디자인이 필요하면 이 영역에 추가합니다.
+========================================================= */
+
+/* 회원가입 페이지 전용 스타일 예시
+.signup-notice {
+  color: #666666;
+}
+*/
+
+/* =========================================================
+   5. 갤러리 페이지 스타일
+   - gallery.html에서만 사용하는 스타일입니다.
+========================================================= */
+
+/* 갤러리 페이지 상단 영역입니다. */
+.gallery-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+/* 갤러리 콘텐츠의 전체 너비와 가운데 정렬을 담당합니다. */
+.gallery-section {
+  width: 900px;
+  margin: 30px auto;
+}
+
+/* 카드들을 가로로 배치합니다. */
+.gallery-list {
+  display: flex;
+  gap: 20px;
+}
+
+/* 카드 하나의 스타일입니다. */
+.card {
+  width: 280px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+/* 카드 이미지 크기를 일정하게 맞춥니다. */
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* 카드 제목 스타일입니다. */
+.card-title {
+  font-size: 22px;
+  color: #222222;
+}
+
+/* 카드 설명 문구 스타일입니다. */
+.card-desc {
+  color: #666666;
+}
+
+/* 갤러리 카드 버튼 스타일입니다. */
+.card-btn {
+  width: 120px;
+  height: 36px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 갤러리 카드 버튼 위에 마우스를 올렸을 때 색상을 바꿉니다. */
+.card-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* 페이지 하단 영역입니다. */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #666666;
+}
